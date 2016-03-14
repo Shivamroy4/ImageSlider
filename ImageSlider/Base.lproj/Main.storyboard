@@ -29,15 +29,15 @@
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="c3D-2w-chk">
                                             <rect key="frame" x="0.0" y="100" width="600" height="400"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="FFX-eC-pOh">
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="20" id="FFX-eC-pOh">
                                                 <size key="itemSize" width="400" height="400"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="sectionInset" minX="21" minY="0.0" maxX="20" maxY="0.0"/>
                                             </collectionViewFlowLayout>
                                             <cells>
                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="animalcell" id="Rog-Cs-AZw" customClass="AnimalsCellControllerCollectionViewCell" customModule="ImageSlider" customModuleProvider="target">
-                                                    <rect key="frame" x="20" y="0.0" width="400" height="400"/>
+                                                    <rect key="frame" x="21" y="0.0" width="400" height="400"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                         <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
@@ -46,47 +46,42 @@
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lion" translatesAutoresizingMaskIntoConstraints="NO" id="bcP-Rh-7RV">
                                                                 <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
                                                             </imageView>
-                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rH6-gF-xbc">
-                                                                <rect key="frame" x="0.0" y="400" width="400" height="0.0"/>
-                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HWe-xQ-95h">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="0.0"/>
+                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pjY-dq-lPp">
+                                                                <rect key="frame" x="0.0" y="355" width="400" height="45"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="l9s-Gs-w0i">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="45"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Lion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThO-0y-18w">
+                                                                            <rect key="frame" x="0.0" y="16" width="400" height="21"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="ThO-0y-18w" firstAttribute="centerX" secondItem="l9s-Gs-w0i" secondAttribute="centerX" id="grP-FO-Ma8"/>
+                                                                    </constraints>
                                                                 </view>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" id="ff3-cY-PnI"/>
+                                                                    <constraint firstItem="ThO-0y-18w" firstAttribute="centerX" secondItem="pjY-dq-lPp" secondAttribute="centerX" id="wUS-cU-XfJ"/>
+                                                                    <constraint firstItem="ThO-0y-18w" firstAttribute="centerY" secondItem="pjY-dq-lPp" secondAttribute="centerY" id="yoA-0J-GgR"/>
                                                                 </constraints>
                                                                 <blurEffect style="extraLight"/>
                                                             </visualEffectView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThO-0y-18w">
-                                                                <rect key="frame" x="75" y="379" width="280" height="21"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </view>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="bcP-Rh-7RV" secondAttribute="trailing" id="0r7-ZM-Ifg"/>
                                                         <constraint firstAttribute="bottom" secondItem="bcP-Rh-7RV" secondAttribute="bottom" id="4I7-Uk-jOR"/>
-                                                        <constraint firstAttribute="bottom" secondItem="rH6-gF-xbc" secondAttribute="bottom" id="4lk-R9-pjZ"/>
-                                                        <constraint firstAttribute="trailing" secondItem="rH6-gF-xbc" secondAttribute="trailing" id="9Lh-fN-Jps"/>
-                                                        <constraint firstAttribute="trailing" secondItem="rH6-gF-xbc" secondAttribute="trailing" id="Isk-Sv-dli"/>
-                                                        <constraint firstItem="ThO-0y-18w" firstAttribute="leading" secondItem="rH6-gF-xbc" secondAttribute="trailing" constant="-325" id="M0j-mS-rJB"/>
-                                                        <constraint firstAttribute="bottom" secondItem="rH6-gF-xbc" secondAttribute="bottom" id="M8a-Im-wra"/>
-                                                        <constraint firstAttribute="bottom" secondItem="rH6-gF-xbc" secondAttribute="bottom" id="NB3-YR-rXN"/>
                                                         <constraint firstItem="bcP-Rh-7RV" firstAttribute="top" secondItem="Rog-Cs-AZw" secondAttribute="top" id="PQ8-no-QoA"/>
                                                         <constraint firstItem="bcP-Rh-7RV" firstAttribute="top" secondItem="Rog-Cs-AZw" secondAttribute="top" id="Pjx-Ye-0iM"/>
-                                                        <constraint firstItem="rH6-gF-xbc" firstAttribute="leading" secondItem="Rog-Cs-AZw" secondAttribute="leading" id="SmH-Za-L9h"/>
                                                         <constraint firstItem="bcP-Rh-7RV" firstAttribute="leading" secondItem="Rog-Cs-AZw" secondAttribute="leading" id="Zrz-QH-nvs"/>
-                                                        <constraint firstAttribute="trailing" secondItem="ThO-0y-18w" secondAttribute="trailing" id="avd-Yq-G0d"/>
                                                         <constraint firstAttribute="trailing" secondItem="bcP-Rh-7RV" secondAttribute="trailing" id="dqh-88-dd7"/>
-                                                        <constraint firstItem="rH6-gF-xbc" firstAttribute="leading" secondItem="Rog-Cs-AZw" secondAttribute="leading" id="e4G-4F-CnK"/>
                                                         <constraint firstAttribute="bottom" secondItem="bcP-Rh-7RV" secondAttribute="bottom" id="fWI-h1-1AF"/>
                                                         <constraint firstItem="bcP-Rh-7RV" firstAttribute="leading" secondItem="Rog-Cs-AZw" secondAttribute="leading" id="gSg-9g-2BA"/>
-                                                        <constraint firstItem="rH6-gF-xbc" firstAttribute="top" secondItem="ThO-0y-18w" secondAttribute="bottom" constant="1" id="oJw-Sq-eVF"/>
-                                                        <constraint firstItem="ThO-0y-18w" firstAttribute="leading" secondItem="Rog-Cs-AZw" secondAttribute="leading" id="pZg-sa-OnU"/>
-                                                        <constraint firstAttribute="trailing" secondItem="rH6-gF-xbc" secondAttribute="trailing" id="sgi-9v-nud"/>
-                                                        <constraint firstItem="rH6-gF-xbc" firstAttribute="leading" secondItem="Rog-Cs-AZw" secondAttribute="leading" id="zkp-fG-mQ1"/>
+                                                        <constraint firstItem="pjY-dq-lPp" firstAttribute="leading" secondItem="bcP-Rh-7RV" secondAttribute="trailing" constant="-400" id="umS-Bq-dAw"/>
+                                                        <constraint firstItem="pjY-dq-lPp" firstAttribute="top" secondItem="bcP-Rh-7RV" secondAttribute="bottom" constant="-45" id="vy6-0D-Qdu"/>
                                                     </constraints>
                                                     <connections>
                                                         <outlet property="image" destination="bcP-Rh-7RV" id="kSn-yS-Rej"/>
