@@ -46,7 +46,7 @@
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lion" translatesAutoresizingMaskIntoConstraints="NO" id="bcP-Rh-7RV">
                                                                 <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
                                                             </imageView>
-                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rH6-gF-xbc">
+                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rH6-gF-xbc">
                                                                 <rect key="frame" x="0.0" y="400" width="400" height="0.0"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HWe-xQ-95h">
                                                                     <rect key="frame" x="0.0" y="0.0" width="400" height="0.0"/>
