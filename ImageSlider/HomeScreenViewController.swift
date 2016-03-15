@@ -25,6 +25,7 @@ class HomeScreenViewController: UIViewController {
         return.LightContent
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -54,4 +55,10 @@ extension HomeScreenViewController : UICollectionViewDataSource
     return cell
 }
 
+}
+
+extension HomeScreenViewController : UIScrollViewDelegate
+
+{
+    
 }

@@ -83,6 +83,17 @@
                                                         <constraint firstItem="pjY-dq-lPp" firstAttribute="leading" secondItem="bcP-Rh-7RV" secondAttribute="trailing" constant="-400" id="umS-Bq-dAw"/>
                                                         <constraint firstItem="pjY-dq-lPp" firstAttribute="top" secondItem="bcP-Rh-7RV" secondAttribute="bottom" constant="-45" id="vy6-0D-Qdu"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <outlet property="image" destination="bcP-Rh-7RV" id="kSn-yS-Rej"/>
                                                         <outlet property="title" destination="ThO-0y-18w" id="DKp-Qr-mxW"/>
